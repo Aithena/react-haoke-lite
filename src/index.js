@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 // 导入antd-mobile
-import 'antd-mobile/dist/antd-mobile.css'
+// import 'antd-mobile/dist/antd-mobile.css'
 
 // 导入 react-virtualized 组件的样式
 import 'react-virtualized/styles.css'

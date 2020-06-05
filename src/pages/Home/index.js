@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy } from 'react'
 // 2.1导入路由
 import { Route } from 'react-router-dom'
 // 导入TabBar
@@ -8,10 +8,14 @@ import { TabBar } from 'antd-mobile';
 import './index.css'
 
 // 2.2 导入News组件
-import News from '../News'
 import Index from '../Index'
-import HouseList from '../HouseList'
-import Profile from '../Profile'
+// import News from '../News'
+// import HouseList from '../HouseList'
+// import Profile from '../Profile'
+
+const News = lazy(() => import('../News'))
+const HouseList = lazy(() => import('../HouseList'))
+const Profile = lazy(() => import('../Profile'))
 
 /*
     1. 在 pages 文件夹中创建 News/index.js组件 
